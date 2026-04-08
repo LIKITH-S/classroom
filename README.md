@@ -2,6 +2,8 @@
 
 An AI-powered, offline-first classroom analytics prototype designed for **MakerGhat**. This system processes Hinglish audio recordings from classrooms to transcribe speech, identify interactions, and calculate teacher/student engagement metrics.
 
+### 🔗 **[LIVE DEMO DASHBOARD](https://classroom-acnaxiasmh8rkwdicdbenv.streamlit.app/)**
+
 > [!IMPORTANT]
 > **Demo Performance Note:** Due to compute constraints and to ensure fast demo performance, transcription and analytics are pre-processed locally. The deployed app serves these precomputed insights.
 
@@ -41,42 +43,40 @@ Place the extracted folders in the project root:
 
 ### **3. Run Analysis**
 ```powershell
-# 1. Fix DLLs (Windows only)
+# 1. Install Full Requirements
+pip install -r requirements-dev.txt
+
+# 2. Fix DLLs (Windows only)
 & ".\.venv\Scripts\python.exe" scripts/fix_dlls.py
 
-# 2. Run Transcription (Requires GPU)
+# 3. Run Transcription (Requires GPU)
 & ".\.venv\Scripts\python.exe" scripts/process_audio.py
 
-# 3. Calculate Insights
+# 4. Calculate Insights
 & ".\.venv\Scripts\python.exe" scripts/calculate_metrics.py
 ```
 
 ---
 
-## 📊 Technical Notes
+## 📦 Dashboard Setup (Local)
 
-## 📦 Installation
+If you just want to run the **dashboard** locally using the pre-processed data:
 
-### **1. Prerequisites**
-- Python 3.9+
-- NVIDIA GPU (Recommended for speed)
-- Virtual Environment (`.venv`)
-
-### **2. Setup**
+### **1. Setup**
 ```powershell
 # Clone the repository
-git clone https://github.com/your-username/makerghat-classroom-analytics.git
-cd makerghat-classroom-analytics
+git clone https://github.com/LIKITH-S/classroom.git
+cd classroom
 
 # Setup virtual environment
 python -m venv .venv
 .\.venv\Scripts\activate
 
-# Install dependencies
+# Install Dashboard requirements
 pip install -r requirements.txt
 ```
 
-### **3. Run the Dashboard**
+### **2. Run**
 ```powershell
 streamlit run app.py
 ```
