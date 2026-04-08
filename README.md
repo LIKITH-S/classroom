@@ -7,7 +7,6 @@ An AI-powered, offline-first classroom analytics prototype designed for **MakerG
 > [!IMPORTANT]
 > **Demo Performance Note:** Due to compute constraints and to ensure fast demo performance, transcription and analytics are pre-processed locally. The deployed app serves these precomputed insights.
 
-![MakerGhat Analytics Dashboard](https://makerghat.org/wp-content/uploads/2021/04/MakerGhat-Logo-Yellow-01.png)
 
 ## 🚀 Overview
 
