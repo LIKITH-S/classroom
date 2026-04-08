@@ -42,14 +42,18 @@ Place the extracted folders in the project root:
 ```
 
 ### **3. Dependency Strategy**
-| File | Purpose | Contents |
+
+| File | Purpose | Usage |
 | :--- | :--- | :--- |
-| **`requirements.txt`** | **Production (Web)** | Lightweight libs for Streamlit & UI. |
-| **`requirements-dev.txt`** | **Development (Local)** | AI Muscles (`torch`, `faster-whisper`) for processing. |
+| **`requirements.txt`** | **Production (Web)** | Lightweight libs for the Cloud Dashboard only. |
+| **`requirements-dev.txt`** | **Full Suite (Local)** | **All-in-one:** AI Muscles + Dashboard + Development tools. |
+
+> [!TIP]
+> **Local Developers:** Use `requirements-dev.txt` to ensure you have both the transcription engine **and** the dashboard dependencies installed in one go.
 
 ### **4. Run Analysis**
 ```powershell
-# 1. Install Full Requirements
+# 1. Install Full Suite (AI + Dashboard)
 pip install -r requirements-dev.txt
 
 # 2. Fix DLLs (Windows only)
