@@ -2,7 +2,7 @@
 
 An AI-powered, offline-first classroom analytics prototype designed for **MakerGhat**. This system processes Hinglish audio recordings from classrooms to transcribe speech, identify interactions, and calculate teacher/student engagement metrics.
 
-### 🔗 **[LIVE DEMO DASHBOARD](https://classroom-acnaxiasmh8rkwdicdbenv.streamlit.app/)**
+### 🔗 **[LIVE DEMO DASHBOARD](https://classroom-acnaxiasmh8rkwdfcdbenv.streamlit.app/)**
 
 > [!IMPORTANT]
 > **Demo Performance Note:** Due to compute constraints and to ensure fast demo performance, transcription and analytics are pre-processed locally. The deployed app serves these precomputed insights.
