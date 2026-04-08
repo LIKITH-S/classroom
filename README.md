@@ -41,7 +41,13 @@ Place the extracted folders in the project root:
 └── processed_data/
 ```
 
-### **3. Run Analysis**
+### **3. Dependency Strategy**
+| File | Purpose | Contents |
+| :--- | :--- | :--- |
+| **`requirements.txt`** | **Production (Web)** | Lightweight libs for Streamlit & UI. |
+| **`requirements-dev.txt`** | **Development (Local)** | AI Muscles (`torch`, `faster-whisper`) for processing. |
+
+### **4. Run Analysis**
 ```powershell
 # 1. Install Full Requirements
 pip install -r requirements-dev.txt
