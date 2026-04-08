@@ -1,6 +1,6 @@
-﻿# ROADMAP.md
+# ROADMAP.md
 
-> **Current Phase**: Not started
+> **Current Phase**: Phase 3
 > **Milestone**: Prototype MVP
 
 ## Must-Haves (from SPEC)
