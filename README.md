@@ -25,7 +25,8 @@ If you wish to run the **transcription** and **metrics analysis** yourself (requ
 
 ### **1. Download Assets**
 Due to size constraints, the raw audio and AI model weights are hosted separately:
-- **[DOWNLOAD LINK (Google Drive)]**: *<Insert your link here>*
+- **[DOWNLOAD AUDIO (Google Drive)]**: https://drive.google.com/drive/folders/1zGIuBkR0BEjoC9cx3RK4F6IfFO4gZ-8y?usp=drive_link
+- **[DOWNLOAD MODELS (Google Drive)]**: *<Insert your link here>*
 - **Contents**: `audio/` (Raw MP3s) and `models/` (Whisper Medium Weights).
 
 ### **2. Setup Directories**
