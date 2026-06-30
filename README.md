@@ -69,33 +69,26 @@ Place the extracted folders in the project root:
 └── processed_data/
 ```
 
-### **3. Dependency Strategy**
-| File | Purpose | Usage |
-| :--- | :--- | :--- |
-| **`requirements.txt`** | **Production (Web)** | Lightweight libs for Cloud Dashboard only. |
-| **`requirements-dev.txt`** | **Full Suite (Local)** | AI Muscles + Dashboard + Development tools. |
+### **3. Setup & Installation Guide**
 
-### **4. Run Analysis**
+For complete step-by-step instructions on setting up your environment, creating/activating a virtual environment, installing dependencies, and running the code, please refer to the:
+👉 **[SETUP_GUIDE.md](file:///d:/AI%20classroom/SETUP_GUIDE.md)**
+
+### **4. Quick Local Start (Active Virtual Environment)**
+If you already have a virtual environment set up and active, run:
 ```powershell
-pip install -r requirements-dev.txt
-& ".\.venv\Scripts\python.exe" scripts/fix_dlls.py
-& ".\.venv\Scripts\python.exe" scripts/process_audio.py
-& ".\.venv\Scripts\python.exe" scripts/calculate_metrics.py
-```
-
----
-
-## 📦 Dashboard Setup (Local)
-```powershell
-git clone https://github.com/LIKITH-S/classroom.git
-cd classroom
-python -m venv .venv
-.\.venv\Scripts\activate
+# Install all dependencies (now unified in requirements.txt)
 pip install -r requirements.txt
+
+# Run Windows NVIDIA DLL copy (if on Windows, for audio processing)
+python scripts/fix_dlls.py
+
+# Launch the Streamlit dashboard
 streamlit run app.py
 ```
 
 ---
+
 
 ## 👨‍💻 Developed By
 Developed as a technical prototype for **MakerGhat Classroom Analytics**. 
